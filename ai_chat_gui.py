@@ -8,7 +8,7 @@ import random
 from playsound import playsound
 import threading
 
-# مفتاح Cohere
+
 API_KEY = "05RVR7KnkCxDYs1RLguSc4NsuxNgjTDuHsOCDuZG"
 co = cohere.Client(API_KEY)
 
@@ -44,10 +44,10 @@ def on_ask():
 
     response = generate_response(question)
 
-    # عرض الرد مباشرة
+  
     response_label.config(text=response, wraplength=450, justify="right")
 
-    # تشغيل الصوت في الخلفية
+   
     threading.Thread(target=speak_text, args=(response,), daemon=True).start()
 
 root = tk.Tk()
