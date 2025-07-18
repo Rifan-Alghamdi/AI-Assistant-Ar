@@ -38,6 +38,7 @@ Smart Assistant is an interactive Arabic voice assistant that allows users to as
 | cohere_responses.py     | Generate AI text responses using Cohere      |
 | cohere_text_to_speech.py| Convert text responses to Arabic speech      |
 | ai_assistant.png        | Screenshot showing the result                |
+| AI Assistant.mp4        | An explanatory video showing the outputs including the interface and responses |                                            |
 | README.md               | Project documentation                        |
 
 > Note: Temporary audio files (*.mp3) and output text files (output.txt, cohere_responses.txt) are generated during runtime and not included in this repository.
