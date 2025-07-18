@@ -6,7 +6,6 @@ API_KEY ="05RVR7KnkCxDYs1RLguSc4NsuxNgjTDuHsOCDuZG"
 
 co = cohere.Client(API_KEY)
 
-# ✅ قائمة الأسئلة
 questions = [
     "كيف حالك؟",
     "أنا مهتم بتعلم أشياء جديدة، كيف أبدأ؟",
@@ -15,7 +14,7 @@ questions = [
     "ما أهمية التعلم المستمر؟"
 ]
 
-# ✅ دالة توليد الرد
+
 def generate_response(user_input):
     response = co.generate(
         model='command-r-plus',
@@ -25,23 +24,23 @@ def generate_response(user_input):
     )
     return response.generations[0].text.strip()
 
-# ✅ مجلد لحفظ الصوتيات (اختياري)
+
 if not os.path.exists("responses_audio"):
     os.makedirs("responses_audio")
 
-# ✅ نحفظ كل سؤال وردّه نص + صوت
+
 with open("cohere_responses.txt", "w", encoding="utf-8", errors="ignore") as file:
     for idx, question in enumerate(questions, start=1):
         try:
-            # 🧠 توليد الرد
+       
             reply = generate_response(question)
 
-            # 📝 حفظه في ملف نص
+            
             file.write(f"🟡 السؤال: {question}\n")
             file.write(f"🟢 الرد: {reply}\n")
             file.write("-" * 40 + "\n")
 
-            # 🔊 تحويله إلى صوت وحفظه
+         
             tts = gTTS(text=reply, lang='ar')
             audio_filename = f"responses_audio/response_{idx}.mp3"
             tts.save(audio_filename)
