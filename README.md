@@ -6,10 +6,6 @@
 ##📌 Overview
 
 Smart Assistant is an interactive Arabic voice assistant that allows users to ask questions and receive intelligent responses — both in text and speech.  
-Built using Cohere's command-r-plus model for natural language generation and gTTS for voice output, the assistant provides a smooth and user-friendly interface built with Tkinter.
-
-This project was created as part of the Summer Training – AI Track in the Full Stack Robotics Engineer program.
-
 ---
 
 ## ⚙️ Features
@@ -54,37 +50,25 @@ This project was created as part of the Summer Training – AI Track in the Full
 | gTTS     | Convert text to speech using Google Text-to-Speech  |
 | playsound| Play audio files in MP3 format                      |
 | tkinter  | Create graphical user interface (built-in with Python) |
+
+
 ## 💻 How to Run
+1. The user writes a question in Arabic using the interface.
+ 2. The system sends the question to an AI model to generate a response.
+ 3. The response is shown on screen and read aloud using Arabic voice.
+ 4. If an error occurs, a message appears and the program continues smoothly.
 
-1. Download the project folder locally  
-   Save it anywhere on your device, e.g. Desktop/ai-voice-assistant
-
-2. Install the required libraries  
-   Open your terminal or Anaconda Prompt and run:
-
-   ```bash
-   pip install cohere gTTS playsound
-
-3. Add your Cohere API Key
-Open ai_chat_gui.py and replace this line:
-
-API_KEY = 05RVR7KnkCxDYs1RLguSc4NsuxNgjTDuHsOCDuZG
-
- 4. Run the app
-In the terminal, navigate to the project folder and run:
-
-python ai_chat_gui.py
-Or open it in VS Code and press Run ▶️.
-
+This assistant works on any Python environment that supports basic libraries for GUI, API communication, and voice output.
 
 ## 🛠 Built With
+
  • Python
  • Cohere API 
  • gTTS 
  • Tkinter GUI 
  • playsound 
 
-❓ FAQ
+## ❓ FAQ
 
 Q: Why is the voice delayed sometimes?
 A: For longer answers, the voice may take an extra second to be generated and played. This is normal due to TTS processing.
