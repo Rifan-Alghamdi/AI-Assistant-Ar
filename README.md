@@ -53,12 +53,12 @@ Smart Assistant is an interactive Arabic voice assistant that allows users to as
 
 
 ## 💻 How to Run
-1. The user writes a question in Arabic using the interface.
+1. The user inputs a question in Arabic through the program interface.
  2. The system sends the question to an AI model to generate a response.
- 3. The response is shown on screen and read aloud using Arabic voice.
- 4. If an error occurs, a message appears and the program continues smoothly.
-
-This assistant works on any Python environment that supports basic libraries for GUI, API communication, and voice output.
+ 3. The response is displayed on the screen and read aloud using Arabic voice.
+ 4. When the assistant generates a voice reply, it saves the audio as a temporary file on disk.
+ 5. The audio file is played for the user and deleted immediately after playback to prevent file conflicts and save storage space.
+ 6. If any error occurs, an appropriate message is shown and the program continues running smoothly.
 
 ## 🛠 Built With
 
