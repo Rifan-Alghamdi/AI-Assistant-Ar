@@ -1,7 +1,7 @@
 # AI-Assistant-Ar
 ## 🧠 Smart Assistant – Arabic AI Voice Assistant
 
-![AI Assistant Preview](ai_assistant.png)
+![AI Assistant Preview](Ai_assistant.png)
 
 ## 📌 Overview
 
