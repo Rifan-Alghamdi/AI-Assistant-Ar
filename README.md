@@ -8,7 +8,7 @@
 Smart Assistant is an interactive Arabic voice assistant that allows users to ask questions and receive intelligent responses — both in text and speech.  
 ---
 
-## ⚙️ Features
+## 📋 Features
 
 - 💬 Ask any question in Arabic.
 - 🧠 AI-generated answers using Cohere API.
