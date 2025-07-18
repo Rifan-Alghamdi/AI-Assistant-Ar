@@ -21,7 +21,6 @@ def generate_response(user_input):
     )
     return response.generations[0].text.strip()
 
-# ✅ حفظ الردود بدون أرقام
 with open("cohere_responses.txt", "w", encoding="utf-8", errors="ignore") as file:
     for q in questions:
         try:
