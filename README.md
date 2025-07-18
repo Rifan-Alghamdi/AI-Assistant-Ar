@@ -1,9 +1,9 @@
 # AI-Assistant-Ar
-##🧠 Smart Assistant – Arabic AI Voice Assistant
+## 🧠 Smart Assistant – Arabic AI Voice Assistant
 
 ![AI Assistant Preview](ai_assistant.png)
 
-##📌 Overview
+## 📌 Overview
 
 Smart Assistant is an interactive Arabic voice assistant that allows users to ask questions and receive intelligent responses — both in text and speech.  
 ---
